@@ -5,7 +5,7 @@ Intent-based university assistant built for a **Machine Learning** course projec
 ## Setup
 
 ```powershell
-cd "c:\Users\dell\Desktop\AI testing"
+
 python -m pip install -r requirements.txt
 python -c "import nltk; nltk.download('stopwords')"
 ```
