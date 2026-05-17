@@ -1,3 +1,7 @@
+<img width="486" height="289" alt="Screenshot 2026-05-17 115012" src="https://github.com/user-attachments/assets/d1059465-e5ce-4f0c-bfe0-6d4f1211ba78" />
+<img width="485" height="504" alt="Screenshot 2026-05-17 114925" src="https://github.com/user-attachments/assets/46789433-6a7d-41c8-b962-2c87dc0e432b" />
+<img width="463" height="407" alt="Screenshot 2026-05-17 114953" src="https://github.com/user-attachments/assets/32379f0d-db4b-400e-9b9a-6000fa0ff961" />
+<img width="744" height="185" alt="Screenshot 2026-05-17 115127" src="https://github.com/user-attachments/assets/5c7831ee-8b01-4c45-868f-979058fcf2df" />
 # University ML Chatbot
 
 Intent-based university assistant built for a **Machine Learning** course project. User messages are classified with **TF-IDF + Logistic Regression**, then answered from `intents.json`.
