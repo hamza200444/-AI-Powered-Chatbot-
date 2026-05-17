@@ -1,0 +1,483 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "greetings",
+        "hi there",
+        "hello there",
+        "hey bot",
+        "start",
+        "wake up"
+      ],
+      "responses": [
+        "Hello! I am the University Assistant. Ask me about admissions, courses, fees, hostel, exams, and more.",
+        "Hi! Welcome to the university help desk. How can I assist you today?",
+        "Greetings! I can help with admissions, scholarships, departments, library, and campus facilities."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "talk later",
+        "exit",
+        "quit",
+        "good night",
+        "take care",
+        "i am leaving",
+        "catch you later"
+      ],
+      "responses": [
+        "Goodbye! Visit the student portal or email contact@university.edu if you need more help.",
+        "See you later! Best of luck with your studies.",
+        "Take care! Feel free to ask anytime about university services."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "thanks a lot",
+        "thank you so much",
+        "appreciate it",
+        "that helped",
+        "you are helpful",
+        "great help"
+      ],
+      "responses": [
+        "You are welcome! Is there anything else about the university I can help with?",
+        "Glad I could help! Ask me about admissions, courses, or campus life anytime.",
+        "My pleasure! Good luck with your academic journey."
+      ]
+    },
+    {
+      "tag": "bot_capabilities",
+      "patterns": [
+        "what can you do",
+        "help",
+        "how can you help me",
+        "what do you know",
+        "list your features",
+        "what questions can you answer",
+        "your capabilities",
+        "what are you for",
+        "how do you work",
+        "explain yourself"
+      ],
+      "responses": [
+        "I am an ML-based university chatbot. I answer questions about admissions, fees, courses, hostel, library, exams, scholarships, departments, and campus services using intent classification (TF-IDF + Logistic Regression).",
+        "You can ask me about: admission process, fee structure, scholarships, programs, hostel, library timings, exam schedule, results, contact details, and more.",
+        "I use Natural Language Processing to match your message to trained intents and reply with pre-defined university information. Type your question in plain English!"
+      ]
+    },
+    {
+      "tag": "admission_process",
+      "patterns": [
+        "how to apply",
+        "admission process",
+        "i want admission",
+        "how can i enroll",
+        "admission steps",
+        "where can i apply",
+        "register for program",
+        "admission deadline",
+        "documents required for admission",
+        "application form",
+        "how do i get admitted",
+        "eligibility for admission",
+        "when does admission open",
+        "online admission",
+        "apply for undergraduate",
+        "apply for masters"
+      ],
+      "responses": [
+        "Apply online via the university admission portal. Submit your CNIC/ID, academic transcripts, passport-size photo, and the completed application form before the deadline.",
+        "Steps: (1) Check program eligibility on the website, (2) Fill the online form, (3) Pay the application fee, (4) Upload documents, (5) Track status on the portal.",
+        "Admission is open each semester. Required documents typically include matric/intermediate or bachelor marksheets, ID copy, and recent photographs. Contact admissions@university.edu for program-specific rules."
+      ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "fee structure",
+        "tuition fee",
+        "how much is the fee",
+        "semester fee",
+        "admission fee",
+        "total cost",
+        "university charges",
+        "fee per semester",
+        "payment plan",
+        "installment fee",
+        "annual fee",
+        "hostel fee included",
+        "late fee policy"
+      ],
+      "responses": [
+        "Fees vary by program (e.g., Engineering, Business, CS). Undergraduate programs are typically billed per semester. See the official fee chart on the university website under Admissions → Fee Structure.",
+        "Besides tuition, there may be admission fee, lab charges, and optional hostel/mess fees. Scholarships can reduce tuition for eligible students.",
+        "For exact amounts, check the latest fee notification on the portal or email finance@university.edu with your program name."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact",
+        "phone number",
+        "email",
+        "helpline",
+        "how to reach university",
+        "admin office contact",
+        "admissions email",
+        "support line",
+        "office address",
+        "call university",
+        "whatsapp number",
+        "contact details"
+      ],
+      "responses": [
+        "General: contact@university.edu | Phone: +92-42-1234567 (Mon–Fri, 9 AM–5 PM). Admissions: admissions@university.edu.",
+        "Visit https://university.edu/contact for department-wise emails and campus map.",
+        "Student support: support@university.edu. For emergencies on campus, contact the security desk listed on the website."
+      ]
+    },
+    {
+      "tag": "scholarship_info",
+      "patterns": [
+        "scholarship",
+        "financial aid",
+        "merit scholarship",
+        "need based aid",
+        "how to apply for scholarship",
+        "scholarship criteria",
+        "fee waiver",
+        "hafiz quran scholarship",
+        "sports scholarship",
+        "scholarship for toppers",
+        "international student scholarship"
+      ],
+      "responses": [
+        "We offer merit-based, need-based, and special-category scholarships. Apply through the scholarship section on the student portal with income certificate and academic records.",
+        "Merit scholarships often require minimum GPA (e.g., 3.5+). Need-based aid requires financial documentation. Deadlines are announced each semester on the notice board.",
+        "Contact the Financial Aid Office at scholarships@university.edu for eligibility and required forms."
+      ]
+    },
+    {
+      "tag": "courses_offered",
+      "patterns": [
+        "courses offered",
+        "programs available",
+        "degrees offered",
+        "what can i study",
+        "list of programs",
+        "undergraduate programs",
+        "postgraduate programs",
+        "bs programs",
+        "ms programs",
+        "mba available",
+        "engineering programs",
+        "computer science degree"
+      ],
+      "responses": [
+        "Undergraduate: BS Computer Science, BS Software Engineering, BS Electrical Engineering, BBA, and more. Postgraduate: MS CS, MBA, MPhil programs in select departments.",
+        "Visit Academics → Programs on the website for full list, credit hours, and duration of each degree.",
+        "Each program has its own entry test and eligibility (e.g., FSc Pre-Engineering for engineering). Check the prospectus for details."
+      ]
+    },
+    {
+      "tag": "department_list",
+      "patterns": [
+        "departments",
+        "list departments",
+        "faculties",
+        "which departments exist",
+        "cs department",
+        "business department",
+        "engineering faculty",
+        "science faculty",
+        "department of mathematics",
+        "who heads the department"
+      ],
+      "responses": [
+        "Main departments: Computer Science, Software Engineering, Electrical Engineering, Business Administration, Mathematics, and Physics.",
+        "Department offices are in their respective blocks. Timings: usually 9 AM–4 PM on working days.",
+        "For HOD contact and faculty list, see the department page on the university website."
+      ]
+    },
+    {
+      "tag": "hostel_facility",
+      "patterns": [
+        "hostel",
+        "accommodation",
+        "where can i stay",
+        "boys hostel",
+        "girls hostel",
+        "hostel fee",
+        "hostel facilities",
+        "mess in hostel",
+        "wifi in hostel",
+        "hostel application",
+        "room allotment"
+      ],
+      "responses": [
+        "Separate hostels for male and female students are available on campus. Apply through the hostel office after admission confirmation.",
+        "Facilities typically include furnished rooms, mess, laundry, study areas, and Wi-Fi. Hostel fee is charged per semester in addition to tuition.",
+        "Contact hostel@university.edu for vacancy, rules, and the hostel application form."
+      ]
+    },
+    {
+      "tag": "library_info",
+      "patterns": [
+        "library",
+        "library timing",
+        "borrow books",
+        "library hours",
+        "digital library",
+        "ebooks",
+        "study in library",
+        "how many books can i issue",
+        "library membership",
+        "research papers access"
+      ],
+      "responses": [
+        "Central library is open Monday–Saturday, 8:00 AM – 8:00 PM. Bring your student ID to borrow books.",
+        "Students can usually issue 2–3 books for 14 days. Renewals are allowed if no reservation exists.",
+        "Online catalog and digital resources are available through the library portal on the student dashboard."
+      ]
+    },
+    {
+      "tag": "exam_schedule",
+      "patterns": [
+        "exam schedule",
+        "when are exams",
+        "midterm date",
+        "final exam date",
+        "exam timetable",
+        "exam calendar",
+        "upcoming exams",
+        "exam plan",
+        "where is exam schedule posted"
+      ],
+      "responses": [
+        "Exam dates are published on the student portal and notice boards 2–3 weeks before exams.",
+        "Midterms are usually in week 8–9; finals at the end of the semester. Check your course outline for exact dates.",
+        "Download the official date sheet from Academics → Examination on the portal."
+      ]
+    },
+    {
+      "tag": "result_inquiry",
+      "patterns": [
+        "results",
+        "when will result come",
+        "check my result",
+        "grades online",
+        "result announced",
+        "gpa calculation",
+        "transcript grades",
+        "semester result date"
+      ],
+      "responses": [
+        "Results are published on the student portal under Results → Semester. Login with your student ID.",
+        "Result declaration is announced via email and SMS. Typically 2–4 weeks after final exams.",
+        "For grade disputes, contact the examination office within the appeal window mentioned on the notice."
+      ]
+    },
+    {
+      "tag": "sports_facilities",
+      "patterns": [
+        "sports",
+        "gym",
+        "football ground",
+        "cricket",
+        "basketball",
+        "indoor games",
+        "sports week",
+        "athletics",
+        "fitness center"
+      ],
+      "responses": [
+        "Campus offers cricket, football, badminton, table tennis, and a gym. Register with the sports society at the start of semester.",
+        "Annual sports week is held each spring. Trials are announced on the notice board and social media.",
+        "Sports facilities are free for enrolled students during posted hours."
+      ]
+    },
+    {
+      "tag": "campus_location",
+      "patterns": [
+        "campus address",
+        "where is university located",
+        "how to reach campus",
+        "location map",
+        "directions to university",
+        "nearest bus stop",
+        "parking on campus"
+      ],
+      "responses": [
+        "The main campus is at University Road, City Name. Google Maps: search 'University Name Campus'.",
+        "Public transport routes 12 and 45 stop near the main gate. Visitor parking is available near the admin block.",
+        "Download the campus map from the website under About → Campus."
+      ]
+    },
+    {
+      "tag": "student_portal",
+      "patterns": [
+        "student portal",
+        "login portal",
+        "forgot password portal",
+        "register courses online",
+        "portal not working",
+        "lms",
+        "learning management system",
+        "online dashboard"
+      ],
+      "responses": [
+        "Access the student portal at https://portal.university.edu with your student ID and password issued at enrollment.",
+        "Use the portal for course registration, fee vouchers, results, and notices. Reset password via 'Forgot Password' with your registered email.",
+        "For LMS/course materials, open the Learning tab after login. Contact IT helpdesk@university.edu for technical issues."
+      ]
+    },
+    {
+      "tag": "attendance_policy",
+      "patterns": [
+        "attendance",
+        "attendance requirement",
+        "minimum attendance",
+        "absent policy",
+        "short attendance",
+        "leave application"
+      ],
+      "responses": [
+        "Most courses require at least 75% attendance to sit in final exams. Medical leave may be accepted with documentation.",
+        "Attendance is tracked in the LMS or manual registers. Check with your course instructor for lab/practical sessions.",
+        "Submit leave applications to the department office for approved absences."
+      ]
+    },
+    {
+      "tag": "internship_placement",
+      "patterns": [
+        "internship",
+        "job placement",
+        "career office",
+        "campus recruitment",
+        "industry link",
+        "cv workshop",
+        "career fair"
+      ],
+      "responses": [
+        "The Career Development Center helps with internships, CV reviews, and on-campus recruitment drives.",
+        "Register on the career portal for internship listings. Final-year students get priority for industry partnerships.",
+        "Email careers@university.edu for appointment with a career counselor."
+      ]
+    },
+    {
+      "tag": "cafeteria_transport",
+      "patterns": [
+        "cafeteria",
+        "canteen",
+        "food on campus",
+        "bus service",
+        "transport facility",
+        "university bus routes",
+        "shuttle service"
+      ],
+      "responses": [
+        "Cafeteria and food courts are in the student center block, open 8 AM – 6 PM on weekdays.",
+        "University shuttle buses run on fixed routes from major city points. Route map is on the transport office notice board.",
+        "Transport pass can be purchased at the admin office each semester."
+      ]
+    },
+    {
+      "tag": "wifi_it_support",
+      "patterns": [
+        "wifi",
+        "internet on campus",
+        "eduroam",
+        "it support",
+        "laptop issue",
+        "computer lab",
+        "printing facility"
+      ],
+      "responses": [
+        "Campus Wi-Fi is available for students. Connect using credentials from IT after enrollment.",
+        "Computer labs are in the CS/Engineering blocks. Printing is available at the library and lab helpdesk.",
+        "IT Support: ithelp@university.edu or visit the IT desk in the admin building."
+      ]
+    },
+    {
+      "tag": "transcript_degree",
+      "patterns": [
+        "transcript",
+        "degree verification",
+        "provisional certificate",
+        "bonafide certificate",
+        "character certificate",
+        "when will i get degree"
+      ],
+      "responses": [
+        "Apply for transcripts and certificates at the Examination/Registrar office with ID and fee challan.",
+        "Processing usually takes 7–14 working days. Degree convocation dates are announced after completion of requirements.",
+        "For employer verification, use the online degree verification link on the university website."
+      ]
+    },
+    {
+      "tag": "ml_project_info",
+      "patterns": [
+        "machine learning project",
+        "how was this bot built",
+        "nlp chatbot",
+        "intent classification",
+        "what algorithm do you use",
+        "scikit learn",
+        "university project chatbot",
+        "final year project bot",
+        "training data",
+        "tfidf"
+      ],
+      "responses": [
+        "This chatbot is a university Machine Learning project. It classifies user messages into intents using TF-IDF vectorization and Logistic Regression, then returns matching responses from intents.json.",
+        "Pipeline: text preprocessing (lowercase, remove punctuation/stopwords) → TF-IDF features → classifier → random response from the matched intent. Fallback messages are used when confidence is low.",
+        "To improve the bot, add more patterns and responses in intents.json and re-run the application to retrain the model."
+      ]
+    },
+    {
+      "tag": "developer_info",
+      "patterns": [
+        "who made you",
+        "developer name",
+        "project author",
+        "student name",
+        "hamza",
+        "created by"
+      ],
+      "responses": [
+        "This university assistant chatbot was developed as a Machine Learning course project.",
+        "For project demo details, refer to the README and source code in the project repository.",
+        "The system demonstrates intent-based dialogue using Python, scikit-learn, and NLTK."
+      ]
+    },
+    {
+      "tag": "fallback_unknown",
+      "patterns": [
+        "asdfgh",
+        "random gibberish",
+        "xyz unknown query"
+      ],
+      "responses": [
+        "I am not sure I understood. Please ask about admissions, fees, courses, hostel, library, exams, or scholarships.",
+        "Could you rephrase your question? I handle university-related topics best."
+      ]
+    }
+  ]
+}

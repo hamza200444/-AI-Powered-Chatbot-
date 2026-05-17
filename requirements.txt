@@ -1,0 +1,6 @@
+deep-translator
+pyttsx3
+nltk
+SpeechRecognition
+scikit-learn
+pyaudio
